@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "suprema-reg";
+    src: url(../suprema/Suprema\ Regular.ttf);
+}
+
+html, body{
+    margin: 0;
+    font-family: "suprema-reg";
+    justify-content: center;
+    background-color: black;
+}
+
+/* Header de la page */
+header{
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid white;
+    
+}
+
+nav{
+    width: 80%;
+    padding: 20px 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 50px;
+    border-color: white;
+}
+
+.logo-header img{
+    height: 40px;
+}
+
+.titre-page h1{
+    color: white;
+    font-size: 40px;
+}
+
+
+/* Contenu de la page */
+.container-main{
+    width: 80%;
+    margin: 120px auto;
+}
+
+.container-main img{
+    padding: 20px;
+    height: 200px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.container-main p{
+    width: 70%;
+    margin: 50px auto;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+button{
+    font-family: "suprema-reg";
+    padding: 20px;
+    margin: auto;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+button:hover{
+    background-color: rgb(204, 204, 204);
+}
