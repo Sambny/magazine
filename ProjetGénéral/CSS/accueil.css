@@ -48,9 +48,9 @@ nav{
 
 /* Contenu de la page */
 .container-main{
-    width: 80%;
-    margin: 120px 10%;
     position: absolute;
+    top: 25%;
+    left: 10%; right: 10%;
     display: flex;
     flex-direction: column;
     flex: auto;
@@ -75,25 +75,99 @@ nav{
     opacity: 30%;
 }
 
-.container-button{
-    width: 100%;
-    padding: 50px;
+/* boutons d'action de la page d'intro */
+.container-button-un{
+    visibility: visible;
+    left: 10%;
+    right: 10%;
+    top: 75%;
     position: absolute;
     display: flex;
     justify-content: center;
-    margin: auto;
 }
 
-button{
+.button-un{
+    cursor: pointer;
     font-family: "suprema-reg";
     padding: 20px;
-    margin: auto;
     font-size: 20px;
     color: rgb(0, 0, 0);
+    border: 0;
     background-color: rgb(255, 255, 255);
-    
 }
 
-button:hover{
+.button-un:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.container-button-deux{
+    visibility: hidden;
+    left: 80%;
+    right: 5%;
+    top: 45%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.button-deux{
+    cursor: pointer;
+    font-family: "suprema-reg";
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-deux:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.container-button-trois{
+    visibility: hidden;
+    left: 2%;
+    right: 75%;
+    top: 40%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.button-trois{
+    cursor: pointer;
+    font-family: "suprema-reg";
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-trois:hover{
+    background-color: rgb(204, 204, 204);
+}
+
+.container-button-quatre{
+    visibility: hidden;
+    left: 10%;
+    right: 10%;
+    top: 75%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.button-quatre{
+    cursor: pointer;
+    font-family: "suprema-reg";
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-quatre:hover{
     background-color: rgb(204, 204, 204);
 }
