@@ -8,13 +8,19 @@
 
 const boutonAccueil = document.querySelector(".button");
 
+const texteAccueil = document.querySelector(".container-main p");
+
 console.log(boutonAccueil);
 
 // boutonAccueil.style.borderRadius = "50px";
 
-boutonAccueil.addEventListener("click", () => {
-    console.log("Vous avez cliqué");
-    boutonAccueil.style.background ="red";
-    
+texteAccueil.addEventListener("click", () =>{
+    console.log("Le texte est selectionné");
+    texteAccueil.style.opacity = 100;
 })
+
+
+
+
+
 
