@@ -4,14 +4,12 @@ const boutonDeux = document.querySelector(".container-button-deux");
 const boutonTrois = document.querySelector(".container-button-trois");
 const boutonQuatre = document.querySelector(".container-button-quatre");
 
-const texteAccueil = document.querySelector(".container-main p");
+const switchMode = document.querySelector(".switch-mode");
+const backgroundColor = document.querySelector(".container-fullPage");
+const backgroundImage = document.querySelector(".background-image");
 
 console.log(boutonUn);
 
-texteAccueil.addEventListener("click", () =>{
-    console.log("Le texte est selectionné");
-    texteAccueil.style.opacity = 100;
-})
 
 // blague des boutons qui changent de placce
 boutonUn.addEventListener("click", ()=>{
@@ -29,7 +27,17 @@ boutonTrois.addEventListener("click", ()=>{
     boutonQuatre.style.visibility = "visible";  
 })
 
+// Passer du dark mode au light mode 
 
+switchMode.addEventListener("click", ()=>{
+    backgroundColor.classList.toggle('clicked');
+})
 
+/* <script>
+  const button = document.getElementById('change-button');
+  const container = document.querySelector('.change-background');
 
-
+  button.addEventListener('click', () => {
+    container.
+  });
+</script> */
