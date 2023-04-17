@@ -7,16 +7,27 @@ html, body{
     margin: 0;
     font-family: "suprema-reg";
     justify-content: center;
-    background-color: black;
-    background-image: url(../assets/fond-d-ecran-motif.jpg);
-    background-attachment: fixed;
+    background-color: #1f1f1f;
+}
+
+/* Image de background */
+.background-image{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    opacity: 5%;
+    z-index: -1;
 }
 
 /* Header de la page */
 header{
+    position: absolute;
     width: 100%;
     margin: auto;
     border-bottom: 3px solid white;
+    background-color: #1f1f1f;
+    z-index: 5;
 }
 
 nav{
