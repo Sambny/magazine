@@ -222,6 +222,99 @@ html, body{
         opacity: 60%;
         position: absolute;
     }
+}
 
+/* Page choix du background */
 
+.bloc-choix-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 95%);
+    border-radius: 30px;
+}
+
+.bloc-rendu{
+    height: 500px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: aquamarine;
+}
+
+.bloc-rendu img{
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+    background-color: aquamarine;
+}
+
+#background-un{
+    visibility: visible;
+}
+
+#background-deux{
+    visibility: hidden;
+}
+
+#background-trois{
+    visibility: hidden;
+}
+
+#background-quatre{
+    visibility: hidden;
+}
+
+.partie-droite{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+
+.partie-droite h3{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: start;
+}
+
+.blocs-choix{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#choix-un{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/fond-d-ecran-motif.jpg);
+    background-color: aqua;
+    border-radius: 30px;
+}
+
+#choix-deux{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/fond-motif-blanc.jpg);
+    background-color: rgb(115, 255, 118);
+    border-radius: 30px;
+}
+
+#choix-trois{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/photo-vogue.png);
+    background-color: rgb(255, 85, 244);
+    border-radius: 30px;
+}
+
+#choix-quatre{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 218, 70);
+    border-radius: 40px;
 }
