@@ -177,6 +177,8 @@ html, body{
     position: absolute;
 }
 
+/* ----------Responsive */
+
 @media screen and (max-width: 900px){
     .bloc-action-container h2{
         font-size: 40px;
