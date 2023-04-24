@@ -91,6 +91,15 @@ html, body{
     border-radius: 40px;
     background-color: #1f1f1f;
 }
+.bloc-boutons button:hover{
+    background-color: #565656;
+}
+
+.bloc-boutons a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
 
 
 /* ----------- Bloc deux */
@@ -293,7 +302,9 @@ html, body{
     width: 50px;
     background-image: url(../assets/fond-d-ecran-motif.jpg);
     background-color: aqua;
+    border: 3px solid black;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 #choix-deux{
@@ -301,7 +312,9 @@ html, body{
     width: 50px;
     background-image: url(../assets/fond-motif-blanc.jpg);
     background-color: rgb(115, 255, 118);
+    border: 0px solid black;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 #choix-trois{
@@ -309,7 +322,9 @@ html, body{
     width: 50px;
     background-image: url(../assets/photo-vogue.png);
     background-color: rgb(255, 85, 244);
+    border: 0px solid black;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 #choix-quatre{
@@ -317,4 +332,6 @@ html, body{
     width: 50px;
     background-color: rgb(255, 218, 70);
     border-radius: 40px;
+    border: 0px solid black;
+    cursor: pointer;
 }

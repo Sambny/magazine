@@ -13,6 +13,11 @@ console.log(choixUn);
 
 choixUn.addEventListener("click", ()=>{
 
+    choixUn.style.border = "3px solid black";
+    choixDeux.style.border = "0px solid black";
+    choixTrois.style.border = "0px solid black";
+    choixQuatre.style.border = "0px solid black";
+
     backgroundUn.style.visibility = "visible";
     backgroundDeux.style.visibility = "hidden";
     backgroundTrois.style.visibility = "hidden";
@@ -20,6 +25,11 @@ choixUn.addEventListener("click", ()=>{
 })
 
 choixDeux.addEventListener("click", ()=>{
+
+    choixUn.style.border = "0px solid black";
+    choixDeux.style.border = "3px solid black";
+    choixTrois.style.border = "0px solid black";
+    choixQuatre.style.border = "0px solid black";
 
     backgroundUn.style.visibility = "hidden";
     backgroundDeux.style.visibility = "visible";
@@ -29,6 +39,11 @@ choixDeux.addEventListener("click", ()=>{
 
 choixTrois.addEventListener("click", ()=>{
 
+    choixUn.style.border = "0px solid black";
+    choixDeux.style.border = "0px solid black";
+    choixTrois.style.border = "3px solid black";
+    choixQuatre.style.border = "0px solid black";
+
     backgroundUn.style.visibility = "hidden";
     backgroundDeux.style.visibility = "hidden";
     backgroundTrois.style.visibility = "visible";
@@ -36,6 +51,11 @@ choixTrois.addEventListener("click", ()=>{
 })
 
 choixQuatre.addEventListener("click", ()=>{
+
+    choixUn.style.border = "0px solid black";
+    choixDeux.style.border = "0px solid black";
+    choixTrois.style.border = "0px solid black";
+    choixQuatre.style.border = "3px solid black";
 
     backgroundUn.style.visibility = "hidden";
     backgroundDeux.style.visibility = "hidden";
