@@ -235,20 +235,41 @@ html, body{
 
 /* Page choix du background */
 
+.page-choix-background{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .bloc-choix-background{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     margin: auto;
-    width: 80%;
+    height: 80%;
+    width: 90%;
     padding: 50px;
     background-color: rgba(255, 255, 255, 95%);
     border-radius: 30px;
 }
 
+
+.container-choix-background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .bloc-rendu{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.poster-rendu{
     height: 500px;
-    width: 300px;
+    width: 350px;
     border: 5px solid black;
     background-color: aquamarine;
 }
@@ -256,7 +277,7 @@ html, body{
 .bloc-rendu img{
     position: absolute;
     height: 500px;
-    width: 300px;
+    width: 350px;
     object-fit: cover;
     background-color: aquamarine;
 }
