@@ -10,7 +10,7 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+    background-color: #1f1f1f;
 }
 
 .image-background{
@@ -236,7 +236,7 @@ html, body{
 /* Page choix du background */
 
 .page-choix-background{
-    height: 1000px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -246,14 +246,16 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto;
-    height: 80%;
-    width: 90%;
+    margin: auto ;
+    height: 70%;
+    width: 70%;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 95%);
     border-radius: 30px;
 }
 
+.bloc-choix-background h1{
+    color: white;
+}
 
 .container-choix-background{
     display: flex;
@@ -267,10 +269,17 @@ html, body{
     justify-content: center;
 }
 
-.poster-rendu{
+#couleur-rendu{
+    position: absolute;
     height: 500px;
     width: 350px;
-    border: 5px solid black;
+    background-color: aquamarine;
+    opacity: 70%;
+}
+
+.background-rendu{
+    height: 500px;
+    width: 350px;
     background-color: aquamarine;
 }
 
@@ -306,16 +315,34 @@ html, body{
 }
 
 .partie-droite h3{
+    color: white;
     margin-top: 0px;
     margin-bottom: 20px;
     width: 100%;
     text-align: start;
 }
 
-.blocs-choix{
+.fond-bloc{
     width: 100%;
+    margin-bottom: 20px;
+}
+
+.fond-choix{
+    width: 100%;
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
+}
+
+.couleur-bloc{
+    width: 100%;
+}
+
+.couleur-bloc input{
+    height: 60px;
+    width: 60px;
+    outline: none;
+    border: none;
 }
 
 #choix-un{

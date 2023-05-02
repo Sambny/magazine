@@ -62,3 +62,19 @@ choixQuatre.addEventListener("click", ()=>{
     backgroundTrois.style.visibility = "hidden";
     backgroundQuatre.style.visibility = "visible";   
 })
+
+
+// color picker
+
+// Récupération de l'élément "color" et de l'objet à colorer
+const colorPicker = document.getElementById("color-picker");
+const coloredObject = document.getElementById("couleur-rendu");
+
+// Ajout d'un écouteur d'événement pour détecter les changements de valeur
+colorPicker.addEventListener("input", function() {
+  // Récupération de la valeur sélectionnée
+  const selectedColor = colorPicker.value;
+  
+  // Application de la couleur sélectionnée à l'objet
+  coloredObject.style.backgroundColor = selectedColor;
+});
