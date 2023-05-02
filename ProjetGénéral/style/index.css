@@ -336,6 +336,7 @@ html, body{
 
 .couleur-bloc{
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .couleur-bloc input{
@@ -343,6 +344,16 @@ html, body{
     width: 60px;
     outline: none;
     border: none;
+}
+
+.texte-bloc{
+    width: 100%;
+}
+
+#entre-texte{
+    font-size: 24px;
+    border: none;
+    padding: 10px;
 }
 
 #choix-un{
