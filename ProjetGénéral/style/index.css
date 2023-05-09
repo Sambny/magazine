@@ -276,16 +276,21 @@ html, body{
     width: 350px;
 }
 
-.titre-rendu{
+#titre-rendu{
+    margin: auto;
     position: relative;
-    top: 50%;
+    text-align: center;
+    word-break: break-word;
+    top: 60%;
+    width: 100%;
     z-index: 200;
 }
+
 
 #background-rendu{
     height: 500px;
     width: 350px;
-    background-color: rgb(63, 110, 94);
+    background-color: rgb(0, 0, 0);
 }
 
 .bloc-rendu img{
@@ -311,6 +316,22 @@ html, body{
     visibility: hidden;
 }
 
+#asset-un{
+    visibility: visible;
+}
+
+#asset-deux{
+    visibility: hidden;
+}
+
+#asset-trois{
+    visibility: hidden;
+}
+
+#asset-quatre{
+    visibility: hidden;
+}
+
 .partie-droite{
     display: flex;
     flex-direction: column;
@@ -327,6 +348,11 @@ html, body{
 }
 
 .fond-bloc{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.assets-render{
     width: 100%;
     margin-bottom: 20px;
 }
@@ -355,8 +381,14 @@ html, body{
 }
 
 #entre-texte{
-    font-size: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 20px;
+    font-family: "suprema-reg";
     border: none;
+    width: 100%;
+    height: 200px;
     padding: 10px;
 }
 
@@ -402,6 +434,57 @@ html, body{
     height: 50px;
     width: 50px;
     background-image: url(../assets/bg-softmix.jpg);
+    background-size: cover;
+    border-radius: 40px;
+    border: 0px solid black;
+    cursor: pointer;
+}
+
+
+
+
+#sans-el{
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#el-un{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/diablotin.png);
+    background-size: cover;
+    border: 3px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#el-deux{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/fleur.png);
+    background-size: cover;
+    border: 0px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#el-trois{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/ressort-poilu.png);
+    background-size: cover;
+    border: 0px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#el-quatre{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/microbes-mignons.png);
     background-size: cover;
     border-radius: 40px;
     border: 0px solid black;
