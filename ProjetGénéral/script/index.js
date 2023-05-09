@@ -4,12 +4,24 @@ const backgroundDeux = document.querySelector("#background-deux");
 const backgroundTrois = document.querySelector("#background-trois");
 const backgroundQuatre = document.querySelector("#background-quatre");
 
+const sansFond = document.querySelector("#sans-fond");
 const choixUn = document.querySelector("#choix-un");
 const choixDeux = document.querySelector("#choix-deux");
 const choixTrois = document.querySelector("#choix-trois");
 const choixQuatre = document.querySelector("#choix-quatre");
 
-console.log(choixUn);
+sansFond.addEventListener("click", ()=>{
+
+    choixUn.style.border = "3px solid black";
+    choixDeux.style.border = "0px solid black";
+    choixTrois.style.border = "0px solid black";
+    choixQuatre.style.border = "0px solid black";
+
+    backgroundUn.style.visibility = "hidden";
+    backgroundDeux.style.visibility = "hidden";
+    backgroundTrois.style.visibility = "hidden";
+    backgroundQuatre.style.visibility = "hidden";
+})
 
 choixUn.addEventListener("click", ()=>{
 
@@ -68,7 +80,7 @@ choixQuatre.addEventListener("click", ()=>{
 
 // Récupération de l'élément "color" et de l'objet à colorer
 const colorPicker = document.getElementById("color-picker");
-const coloredObject = document.getElementById("couleur-rendu");
+const coloredObject = document.getElementById("background-rendu");
 
 // Ajout d'un écouteur d'événement pour détecter les changements de valeur
 colorPicker.addEventListener("input", function() {

@@ -265,6 +265,7 @@ html, body{
 
 .bloc-rendu{
     display: flex;
+    flex-direction: column;
     width: 40%;
     justify-content: center;
 }
@@ -273,14 +274,18 @@ html, body{
     position: absolute;
     height: 500px;
     width: 350px;
-    background-color: aquamarine;
-    opacity: 70%;
 }
 
-.background-rendu{
+.titre-rendu{
+    position: relative;
+    top: 50%;
+    z-index: 200;
+}
+
+#background-rendu{
     height: 500px;
     width: 350px;
-    background-color: aquamarine;
+    background-color: rgb(63, 110, 94);
 }
 
 .bloc-rendu img{
@@ -288,7 +293,6 @@ html, body{
     height: 500px;
     width: 350px;
     object-fit: cover;
-    background-color: aquamarine;
 }
 
 #background-un{
@@ -356,11 +360,19 @@ html, body{
     padding: 10px;
 }
 
+#sans-fond{
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 #choix-un{
     height: 50px;
     width: 50px;
-    background-image: url(../assets/fond-d-ecran-motif.jpg);
-    background-color: aqua;
+    background-image: url(../assets/bg-aurore-boreale.jpg);
+    background-size: cover;
     border: 3px solid black;
     border-radius: 30px;
     cursor: pointer;
@@ -369,8 +381,8 @@ html, body{
 #choix-deux{
     height: 50px;
     width: 50px;
-    background-image: url(../assets/fond-motif-blanc.jpg);
-    background-color: rgb(115, 255, 118);
+    background-image: url(../assets/bg-bulles.jpg);
+    background-size: cover;
     border: 0px solid black;
     border-radius: 30px;
     cursor: pointer;
@@ -379,8 +391,8 @@ html, body{
 #choix-trois{
     height: 50px;
     width: 50px;
-    background-image: url(../assets/photo-vogue.png);
-    background-color: rgb(255, 85, 244);
+    background-image: url(../assets/bg-peinture.jpg);
+    background-size: cover;
     border: 0px solid black;
     border-radius: 30px;
     cursor: pointer;
@@ -389,7 +401,8 @@ html, body{
 #choix-quatre{
     height: 50px;
     width: 50px;
-    background-color: rgb(255, 218, 70);
+    background-image: url(../assets/bg-softmix.jpg);
+    background-size: cover;
     border-radius: 40px;
     border: 0px solid black;
     cursor: pointer;
