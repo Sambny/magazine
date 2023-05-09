@@ -392,6 +392,20 @@ html, body{
     padding: 10px;
 }
 
+.container-typo{
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+#typo-arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 #sans-fond{
     height: 50px;
     width: 50px;

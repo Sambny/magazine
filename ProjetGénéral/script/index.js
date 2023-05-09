@@ -153,10 +153,6 @@ elQuatre.addEventListener("click", ()=>{
 })
 
 
-
-
-
-
 // color picker
 
 // Récupération de l'élément "color" et de l'objet à colorer
