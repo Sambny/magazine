@@ -3,6 +3,10 @@
     src: url(../suprema/Suprema\ Regular.ttf);
 }
 
+@font-face {
+    font-family: "abhaya-reg";
+    src: url(../Abhaya_Libre/AbhayaLibre-Regular.ttf);
+}
 html, body{
     margin: 0;
     font-family: "suprema-reg";
@@ -11,6 +15,10 @@ html, body{
     flex-direction: column;
     justify-content: center;
     background-color: #1f1f1f;
+}
+
+h3{
+    font-family: "abhaya-reg";
 }
 
 .image-background{
@@ -154,7 +162,7 @@ html, body{
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -284,6 +292,7 @@ html, body{
     color: rgb(22, 22, 22);
     text-transform:initial;
     font-family: "suprema-reg";
+    font-size: 50px;
     top: 60%;
     width: 100%;
     z-index: 200;
@@ -294,6 +303,7 @@ html, body{
     height: 500px;
     width: 350px;
     background-color: rgb(0, 0, 0);
+    opacity: 100%;
 }
 
 .bloc-rendu img{
@@ -305,18 +315,22 @@ html, body{
 
 #background-un{
     visibility: visible;
+    opacity: 100%;
 }
 
 #background-deux{
     visibility: hidden;
+    opacity: 100%;
 }
 
 #background-trois{
     visibility: hidden;
+    opacity: 100%;
 }
 
 #background-quatre{
     visibility: hidden;
+    opacity: 100%;
 }
 
 #asset-un{
@@ -425,13 +439,23 @@ html, body{
 }
 
 #typo-suprema{
-    font-family: "suprema";
+    font-family: "suprema-reg";
     cursor: pointer;
 }
 
 #typo-impact{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
+}
+
+#typo-abhaya{
+    font-family: "abhaya-reg";
+    cursor: pointer;
+}
+
+.container-taille-texte p{
+    color: white;
+    margin: 0;
 }
 
 #texte-taille{
@@ -441,7 +465,7 @@ html, body{
 #sans-fond{
     height: 50px;
     width: 50px;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -451,7 +475,7 @@ html, body{
     width: 50px;
     background-image: url(../assets/bg-aurore-boreale.jpg);
     background-size: cover;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -461,7 +485,7 @@ html, body{
     width: 50px;
     background-image: url(../assets/bg-bulles.jpg);
     background-size: cover;
-    border: 0px solid black;
+    border: 0px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -471,7 +495,7 @@ html, body{
     width: 50px;
     background-image: url(../assets/bg-peinture.jpg);
     background-size: cover;
-    border: 0px solid black;
+    border: 0px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -482,7 +506,7 @@ html, body{
     background-image: url(../assets/bg-softmix.jpg);
     background-size: cover;
     border-radius: 40px;
-    border: 0px solid black;
+    border: 0px solid rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -492,7 +516,7 @@ html, body{
 #sans-el{
     height: 50px;
     width: 50px;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -502,7 +526,7 @@ html, body{
     width: 50px;
     background-image: url(../assets/diablotin.png);
     background-size: cover;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -512,7 +536,7 @@ html, body{
     width: 50px;
     background-image: url(../assets/fleur.png);
     background-size: cover;
-    border: 0px solid black;
+    border: 0px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -522,7 +546,7 @@ html, body{
     width: 50px;
     background-image: url(../assets/ressort-poilu.png);
     background-size: cover;
-    border: 0px solid black;
+    border: 0px solid rgb(255, 255, 255);
     border-radius: 30px;
     cursor: pointer;
 }
@@ -533,6 +557,6 @@ html, body{
     background-image: url(../assets/microbes-mignons.png);
     background-size: cover;
     border-radius: 40px;
-    border: 0px solid black;
+    border: 0px solid rgb(255, 255, 255);
     cursor: pointer;
 }

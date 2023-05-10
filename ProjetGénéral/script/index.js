@@ -12,7 +12,7 @@ const choixQuatre = document.querySelector("#choix-quatre");
 
 sansFond.addEventListener("click", ()=>{
 
-    choixUn.style.border = "3px solid black";
+    choixUn.style.border = "0px solid white";
     choixDeux.style.border = "0px solid black";
     choixTrois.style.border = "0px solid black";
     choixQuatre.style.border = "0px solid black";
@@ -25,7 +25,7 @@ sansFond.addEventListener("click", ()=>{
 
 choixUn.addEventListener("click", ()=>{
 
-    choixUn.style.border = "3px solid black";
+    choixUn.style.border = "3px solid white";
     choixDeux.style.border = "0px solid black";
     choixTrois.style.border = "0px solid black";
     choixQuatre.style.border = "0px solid black";
@@ -39,7 +39,7 @@ choixUn.addEventListener("click", ()=>{
 choixDeux.addEventListener("click", ()=>{
 
     choixUn.style.border = "0px solid black";
-    choixDeux.style.border = "3px solid black";
+    choixDeux.style.border = "3px solid white";
     choixTrois.style.border = "0px solid black";
     choixQuatre.style.border = "0px solid black";
 
@@ -53,7 +53,7 @@ choixTrois.addEventListener("click", ()=>{
 
     choixUn.style.border = "0px solid black";
     choixDeux.style.border = "0px solid black";
-    choixTrois.style.border = "3px solid black";
+    choixTrois.style.border = "3px solid white";
     choixQuatre.style.border = "0px solid black";
 
     backgroundUn.style.visibility = "hidden";
@@ -67,7 +67,7 @@ choixQuatre.addEventListener("click", ()=>{
     choixUn.style.border = "0px solid black";
     choixDeux.style.border = "0px solid black";
     choixTrois.style.border = "0px solid black";
-    choixQuatre.style.border = "3px solid black";
+    choixQuatre.style.border = "3px solid white";
 
     backgroundUn.style.visibility = "hidden";
     backgroundDeux.style.visibility = "hidden";
@@ -102,7 +102,7 @@ sansEl.addEventListener("click", ()=>{
 
 elUn.addEventListener("click", ()=>{
 
-    elUn.style.border = "3px solid black";
+    elUn.style.border = "3px solid white";
     elDeux.style.border = "0px solid black";
     elTrois.style.border = "0px solid black";
     elQuatre.style.border = "0px solid black";
@@ -116,7 +116,7 @@ elUn.addEventListener("click", ()=>{
 elDeux.addEventListener("click", ()=>{
 
     elUn.style.border = "0px solid black";
-    elDeux.style.border = "3px solid black";
+    elDeux.style.border = "3px solid white";
     elTrois.style.border = "0px solid black";
     elQuatre.style.border = "0px solid black";
 
@@ -130,7 +130,7 @@ elTrois.addEventListener("click", ()=>{
 
     elUn.style.border = "0px solid black";
     elDeux.style.border = "0px solid black";
-    elTrois.style.border = "3px solid black";
+    elTrois.style.border = "3px solid white";
     elQuatre.style.border = "0px solid black";
 
     assetUn.style.visibility = "hidden";
@@ -144,7 +144,7 @@ elQuatre.addEventListener("click", ()=>{
     elUn.style.border = "0px solid black";
     elDeux.style.border = "0px solid black";
     elTrois.style.border = "0px solid black";
-    elQuatre.style.border = "3px solid black";
+    elQuatre.style.border = "3px solid white";
 
     assetUn.style.visibility = "hidden";
     assetDeux.style.visibility = "hidden";
@@ -168,9 +168,18 @@ colorPicker.addEventListener("input", function() {
   coloredObject.style.backgroundColor = selectedColor;
 });
 
+//opacité du fond
+const backgroundOpacity = document.getElementById("fond-opacite");
+
+backgroundOpacity.addEventListener("input", function() {
+
+    backgroundUn.style.opacity = backgroundOpacity.value;
+    backgroundDeux.style.opacity = backgroundOpacity.value;
+    backgroundTrois.style.opacity = backgroundOpacity.value;
+    backgroundQuatre.style.opacity = backgroundOpacity.value;
+})
 
 // Entrer le texte sur l'affiche 
-
 document.addEventListener('DOMContentLoaded', function(){
 
     var texteEntre = document.getElementById("entre-texte");
@@ -185,7 +194,6 @@ document.addEventListener('DOMContentLoaded', function(){
 var renduTexte = document.getElementById("titre-rendu");
 
 //transformation de la typo du texte
-
 const boutonArial = document.getElementById("typo-arial");
 
 boutonArial.addEventListener("click", ()=>{
@@ -197,7 +205,7 @@ const boutonSuprema = document.getElementById("typo-suprema");
 
 boutonSuprema.addEventListener("click", ()=>{
 
-    renduTexte.style.fontFamily = "suprema"; 
+    renduTexte.style.fontFamily = "suprema-reg"; 
 })
 
 const boutonImpact = document.getElementById("typo-impact");
@@ -205,4 +213,18 @@ const boutonImpact = document.getElementById("typo-impact");
 boutonImpact.addEventListener("click", ()=>{
 
     renduTexte.style.fontFamily = "impact"; 
+})
+
+const boutonAbhaya = document.getElementById("typo-abhaya");
+
+boutonAbhaya.addEventListener("click", ()=>{
+
+    renduTexte.style.fontFamily = "abhaya-reg"; 
+})
+
+//taille du texte
+const texteTaille = document.getElementById("texte-taille");
+
+texteTaille.addEventListener("input", function(){
+    renduTexte.style.fontSize = texteTaille.value + "px";
 })
