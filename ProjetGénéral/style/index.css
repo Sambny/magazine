@@ -281,8 +281,9 @@ html, body{
     position: relative;
     text-align: center;
     word-break: break-word;
-    color: rgb(208, 208, 208);
+    color: rgb(22, 22, 22);
     text-transform:initial;
+    font-family: "suprema-reg";
     top: 60%;
     width: 100%;
     z-index: 200;
@@ -343,6 +344,7 @@ html, body{
 
 .partie-droite h3{
     color: white;
+    font-size: 25px;
     margin-top: 0px;
     margin-bottom: 20px;
     width: 100%;
@@ -352,6 +354,13 @@ html, body{
 .fond-bloc{
     width: 100%;
     margin-bottom: 20px;
+}
+
+.fond-bloc input{
+    height: 60px;
+    width: 60px;
+    outline: none;
+    border: none;
 }
 
 .assets-render{
@@ -364,6 +373,17 @@ html, body{
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.curseur-opacite p{
+    color: white;
+    margin: 0px;
+}
+#fond-opacite{
+    padding: 5px;
+    width: 50%;
+    height: 20px;
 }
 
 .couleur-bloc{
@@ -371,12 +391,6 @@ html, body{
     margin-bottom: 40px;
 }
 
-.couleur-bloc input{
-    height: 60px;
-    width: 60px;
-    outline: none;
-    border: none;
-}
 
 .texte-bloc{
     width: 100%;
@@ -407,9 +421,22 @@ html, body{
 
 #typo-arial{
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
+#typo-suprema{
+    font-family: "suprema";
+    cursor: pointer;
+}
 
+#typo-impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+#texte-taille{
+    width: 50%;
+}
 
 #sans-fond{
     height: 50px;

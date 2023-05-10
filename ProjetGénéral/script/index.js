@@ -182,4 +182,27 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 })
 
-//transformation 
+var renduTexte = document.getElementById("titre-rendu");
+
+//transformation de la typo du texte
+
+const boutonArial = document.getElementById("typo-arial");
+
+boutonArial.addEventListener("click", ()=>{
+
+    renduTexte.style.fontFamily = "Arial, sans-serif"; 
+})
+
+const boutonSuprema = document.getElementById("typo-suprema");
+
+boutonSuprema.addEventListener("click", ()=>{
+
+    renduTexte.style.fontFamily = "suprema"; 
+})
+
+const boutonImpact = document.getElementById("typo-impact");
+
+boutonImpact.addEventListener("click", ()=>{
+
+    renduTexte.style.fontFamily = "impact"; 
+})

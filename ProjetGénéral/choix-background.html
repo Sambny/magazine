@@ -37,18 +37,30 @@
                 
                 
             </div>
+
+            <!-- Partie droite de la page -->
     
             <div class="partie-droite">
 
                 <div class="fond-bloc">
                     <h3>Fonds</h3>
                     <div class="fond-choix">
+
+                        <input type="color" id="color-picker">
+
                         <div id="sans-fond"></div>
                         <div id="choix-un"></div>
                         <div id="choix-deux"></div>
                         <div id="choix-trois"></div>
                         <div id="choix-quatre"></div>
                     </div>
+
+                    <div class="curseur-opacite">
+                        <p>Opacité</p>
+                    <input type="range" min="0" max="100" value="50" id="fond-opacite">
+                    </div>
+                    
+
                 </div>
 
                 <div class="assets-render">
@@ -62,11 +74,6 @@
                     </div>
                 </div>
 
-                <div class="couleur-bloc">
-                    <h3>Couleur</h3>
-                    <input type="color" id="color-picker">
-                </div>
-
                 <div class="texte-bloc">
                     <h3>Tapez votre texte</h3>
                     <textarea type="text" id="entre-texte" placeholder="Mettez votre titre"></textarea> 
@@ -74,7 +81,11 @@
                     <div class="container-typo">
                         <div id="typo-arial">Arial</div>
                         <div id="typo-suprema">Suprema</div>
+                        <div id="typo-impact">Impact</div>
                     </div>
+
+                    <input type="range" min="0" max="100" value="50" id="texte-taille">
+
                     
                 </div>
 
