@@ -181,3 +181,5 @@ document.addEventListener('DOMContentLoaded', function(){
         renduTexte.innerHTML = texteTape;
     })
 })
+
+//transformation 
